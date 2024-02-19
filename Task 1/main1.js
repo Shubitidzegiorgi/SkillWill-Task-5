@@ -15,10 +15,7 @@ let div = document.createElement('div');
 div.textContent = "Click On Button And I'll Disappear";
 div.style.marginBottom = '20px'; 
 
-
-document.body.appendChild(button);
-document.body.appendChild(div);
-
+document.body.append(button, div);
 
 button.addEventListener('click', function() {
   div.style.display = 'none';
